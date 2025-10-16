@@ -65,12 +65,14 @@ git clone https://github.com/gensyn-ai/rl-swarm.git
 cd rl-swarm
 ```
 🐍 Step 4 – Create & activate a Python virtual environment
+
 Isolate dependencies for smooth running:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 ⚡ Step 5 – Start your Swarm Node
+
 Kick off the node and let it join the swarm:
 ```bash
 ./run_rl_swarm.sh
