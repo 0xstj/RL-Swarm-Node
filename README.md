@@ -1,21 +1,105 @@
-# My-Gensyn-RL-Swarm-Guide
+# 🐝 Gensyn AI RL Swarm Node Setup Guide (v0.4.3)
 
-A comprehensive guide to setting up and running **Gensyn RL Swarm nodes** for your community.  
-This guide is **independent and fully rewritten**, focusing on clarity, best practices, and user-friendly instructions.
+## 🔧 Recommended VPS Specs
+- **CPU:** 4–8 vCPUs  
+- **RAM:** 16–32 GB  
+- **Disk:** 200 GB SSD or more  
+- **Network:** Stable 1 Gbps (or at least 100 Mbps)  
+- **OS:** Ubuntu 25.04 recommended  
 
-## Contents
+> ⚠️ Note: Using a VPS with lower specs may cause node instability or failure.
 
-- [Overview](docs/overview.md)
-- [Setup Guide (Mac)](docs/setup_mac.md)
-- [Setup Guide (Linux)](docs/setup_linux.md)
-- [Troubleshooting](docs/troubleshooting.md)
-- [FAQ](docs/faq.md)
-- [Examples](examples/sample_node_setup.md)
-
-## Quick Start
-
-1. Clone this repository:
+## 💻 Login to VPS
+Log in to your VPS using SSH:  
 ```bash
-git clone https://github.com/YOUR_USERNAME/My-Gensyn-RL-Swarm-Guide.git
-cd My-Gensyn-RL-Swarm-Guide
+ssh username@your_vps_ip
+```
+Replace username with your VPS username (usually root) and your_vps_ip with your server’s IP address.
+
+## 📦 Prerequisites
+1. Update System Packages
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+2. Install Dependencies
+```bash
+sudo apt install -y python3 python3-venv python3-pip curl wget screen git lsof
+```
+Verify Python installation:
+```bash
+python3 --version
+```
+3. Install Node.js, npm, & Yarn
+```bash
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt update
+sudo apt install -y nodejs
+```
+Install Yarn:
+```bash
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list > /dev/null
+sudo apt update
+sudo apt install -y yarn
+```
+Verify installations:
+```bash
+node -v
+npm -v
+yarn -v
+```
+## 🚀 Get Your RL Swarm Node Up & Running (Linux/Mac)
+
+💻 **Step 1 – Launch a screen session (For VPS Users)**  
+ it Keep your node running in the background:  
+```bash
+screen -S gensyn
+```
+📥 Step 2 – Clone the RL-Swarm repository
+Grab the latest code:
+```bash
+git clone https://github.com/gensyn-ai/rl-swarm.git
+```
+📂 Step 3 – Navigate into the project folder
+```bash
+cd rl-swarm
+```
+🐍 Step 4 – Create & activate a Python virtual environment
+Isolate dependencies for smooth running:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+⚡ Step 5 – Start your Swarm Node
+Kick off the node and let it join the swarm:
+```bash
+./run_rl_swarm.sh
+```
+🛌 Step 6 – Detach from the screen session (Optional)
+
+Keep the node running even if you close the terminal:
+
+Press Ctrl + A, then D.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
 
