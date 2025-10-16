@@ -77,6 +77,14 @@ Kick off the node and let it join the swarm:
 ```bash
 ./run_rl_swarm.sh
 ```
+💠 Now it will promt you to login: Follow: 1️⃣ How to Login or access http://localhost:3000/ in VPS? 📶
+
+💠 Now It will promt Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N] Enter N
+
+💠 Now It will promt >> Enter the name of the model you want to use in huggingface repo/name format, or press [Enter] to use the default model. press Enter & get defalut model:
+
+💠 Now It will promt >> Would you like your model to participate in the AI Prediction Market? [Y/n] Enter Y
+
 🛌 Step 6 – Detach from the screen session (Optional)
 
 Keep the node running even if you close the terminal:
