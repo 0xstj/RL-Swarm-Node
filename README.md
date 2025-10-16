@@ -1,4 +1,4 @@
-# 🐝 Gensyn AI RL Swarm Node Setup Guide (v0.4.3)
+# <img width="30" height="-30" alt="image" src="https://github.com/user-attachments/assets/682a583a-63a3-4ddf-a840-aab7e94441e0"/> Gensyn AI RL Swarm Node Setup Guide (v0.4.3)
 
 ## 🔧 Recommended VPS Specs
 - **CPU:** 8 vCPUs minimum
