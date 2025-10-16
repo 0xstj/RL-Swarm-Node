@@ -1,7 +1,7 @@
 # 🐝 Gensyn AI RL Swarm Node Setup Guide (v0.4.3)
 
 ## 🔧 Recommended VPS Specs
-- **CPU:** 4–8 vCPUs  
+- **CPU:** 8 vCPUs minimum
 - **RAM:** 16–32 GB  
 - **Disk:** 200 GB SSD or more  
 - **Network:** Stable 1 Gbps (or at least 100 Mbps)  
