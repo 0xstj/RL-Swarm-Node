@@ -83,7 +83,7 @@ Keep the node running even if you close the terminal:
 
 Press Ctrl + A, then D.
 
-USE THIS FOR BACKUP:
+👉 USE THIS FOR BACKUP:
 ```bash
 
 [ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh
