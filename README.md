@@ -12,7 +12,7 @@
 ## 💻 Login to VPS
 Log in to your VPS using SSH:  
 ```bash
-ssh username@your_vps_ip
+ssh root@your_vps_ip
 ```
 Replace username with your VPS username (usually root) and your_vps_ip with your server’s IP address.
 
