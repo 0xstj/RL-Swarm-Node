@@ -178,7 +178,7 @@ Run this command before pulling updates:
 ```bash
 git stash
 ```
-This ensures your local modifications don’t block the update.
+● This ensures your local modifications don’t block the update.
 
 
 
