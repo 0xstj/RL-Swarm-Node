@@ -5,7 +5,7 @@
 - **RAM:** 16–32 GB  
 - **Disk:** 200 GB SSD or more  
 - **Network:** Stable 1 Gbps (or at least 100 Mbps)  
-- **OS:** Ubuntu 25.04 recommended  
+- **OS:** Ubuntu 25.04 recommended and 24.04 is also work 
 
 > ⚠️ Note: Using a VPS with lower specs may cause node instability or failure.
 
