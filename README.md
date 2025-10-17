@@ -16,6 +16,8 @@ ssh root@your_vps_ip
 ```
 Replace username with your VPS username (usually root) and your_vps_ip with your server’s IP address.
 
+wen you login if it will ask for password give password which you created for your VPS.
+
 ## 📦 Prerequisites
 1. Update System Packages
 ```bash
@@ -161,6 +163,8 @@ Make sure to **upgrade your node** to stay fully compatible and secure.
 ---
 
 ### 🔧 **Upgrade Steps**
+
+🔹 First Login your VPS, how to login check above, after that
 
 #### 👉 Navigate to your `RL-SWARM` directory
 ```bash
