@@ -96,6 +96,66 @@ Press Ctrl + A, then D.
 
 [ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh
 ```
+# 🧰 **FAQ & Troubleshoot Guide**
+
+### 🌍 **How to Access Node Dashboard (`http://localhost:3000/`) from VPS**
+
+If you’re running your node on a VPS and want to view the dashboard in your browser, follow these steps 👇  
+
+---
+
+### 🔹 **1. Login to VPS**
+Open a new terminal and connect to your VPS using SSH:  
+```bash
+ssh root@your_vps_ip
+```
+
+🔹 2. Allow Incoming Connections
+
+Enable the required ports for SSH and your node dashboard:
+
+```bash
+sudo apt update && sudo apt install ufw -y
+sudo ufw allow 22/tcp
+sudo ufw allow 3000/tcp
+sudo ufw enable
+```
+✅ Port 22 → SSH Access
+
+✅ Port 3000 → Node Dashboard
+
+🔹 3. Install Cloudflared (Cloudflare Tunnel)
+
+Install Cloudflare Tunnel to securely expose your local dashboard.
+
+```bash
+wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+sudo dpkg -i cloudflared-linux-amd64.deb
+```
+Check version:
+```bash
+cloudflared --version
+```
+
+🔹 4. Run Secure Tunnel
+
+Start the tunnel to expose your local dashboard:
+
+```bash
+cloudflared tunnel --url http://localhost:3000
+```
+After a few seconds, you’ll receive a temporary public URL
+
+example - https://random-name.trycloudflare.com
+
+<img width="1039" height="156" alt="Screenshot 2025-10-17 111613" src="https://github.com/user-attachments/assets/7c9508de-5737-43ad-9799-52cdfb5e6337" />
+
+Copy that link & open in new tab in your browser to access your gensgyn dashboeard🌐
+
+
+
+
+
 
 
 
