@@ -162,10 +162,11 @@ Make sure to **upgrade your node** to stay fully compatible and secure.
 
 ### 🔧 **Upgrade Steps**
 
-#### 1️⃣ Navigate to your `RL-SWARM` directory
+#### 👉 Navigate to your `RL-SWARM` directory
 ```bash
 cd rl-swarm
 ```
+💠 Now pull latest update
 ```bash
 rm -rf .venv && git pull && python3 -m venv .venv && source .venv/bin/activate
 ```
