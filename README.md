@@ -180,6 +180,8 @@ git stash
 ```
 ● This ensures your local modifications don’t block the update.
 
+After this update start from 📂 Step 3 above to restart you node
+
 
 
 
