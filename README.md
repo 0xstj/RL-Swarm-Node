@@ -48,7 +48,7 @@ node -v
 npm -v
 yarn -v
 ```
-## 🚀 Get Your RL Swarm Node Up & Running (Linux/Mac)
+## 💥 Get Your RL Swarm Node Up & Running (Linux/Mac)
 
 💻 **Step 1 – Launch a screen session (For VPS Users)**  
  it Keep your node running in the background:  
