@@ -16,7 +16,7 @@ ssh root@your_vps_ip
 ```
 Replace username with your VPS username (usually root) and your_vps_ip with your server’s IP address.
 
-wen you login if it will ask for password give password which you created for your VPS.
+Wen you login if it will ask for password give password which you created for your VPS.
 
 ## 📦 Prerequisites
 1. Update System Packages
