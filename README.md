@@ -152,6 +152,34 @@ example - https://random-name.trycloudflare.com
 
 Copy that link & open in new tab in your browser to access your gensgyn dashboeard🌐
 
+# 🧩 **Node Upgrade & Security Patch (v0.6.3)**
+
+### ⚠️ **Important Notice**
+A new security update **v0.6.3** has been released.  
+Make sure to **upgrade your node** to stay fully compatible and secure.
+
+---
+
+### 🔧 **Upgrade Steps**
+
+#### 1️⃣ Navigate to your `RL-SWARM` directory
+```bash
+cd rl-swarm
+```
+```bash
+rm -rf .venv && git pull && python3 -m venv .venv && source .venv/bin/activate
+```
+
+💡 If you have uncommitted changes
+
+Run this command before pulling updates:
+
+```bash
+git stash
+```
+This ensures your local modifications don’t block the update.
+
+
 
 
 
