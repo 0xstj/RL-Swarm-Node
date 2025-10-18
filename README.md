@@ -154,7 +154,7 @@ example - https://random-name.trycloudflare.com
 
 Copy that link & open in new tab in your browser to access your gensgyn dashboeard🌐
 
-# 🧩 **Node Upgrade & Security Patch (v0.6.3)**
+# 🧩 **Node Upgrade & Security Patch (v0.6.4)**
 
 ### ⚠️ **Important Notice**
 A new security update **v0.6.3** has been released.  
