@@ -154,10 +154,9 @@ example - https://random-name.trycloudflare.com
 
 Copy that link & open in new tab in your browser to access your gensgyn dashboeard🌐
 
-# 🧩 **Node Upgrade & Security Patch (v0.6.4)**
+# 🧩 **Upgrade your Rl-swarm Node to Codezero**
 
 ### ⚠️ **Important Notice**
-A new security update **v0.6.3** has been released.  
 Make sure to **upgrade your node** to stay fully compatible and secure.
 
 ---
@@ -170,19 +169,28 @@ Make sure to **upgrade your node** to stay fully compatible and secure.
 ```bash
 cd rl-swarm
 ```
+
+🔹Deactivate the environment
+```bash
+deactivate 
+rm -rf .venv
+```
+
 💠 Now pull latest update
 ```bash
-rm -rf .venv && git pull && python3 -m venv .venv && source .venv/bin/activate
+git switch main
+git reset --hard
+git clean -fd
+git pull origin main
 ```
-
-💡 If you have uncommitted changes
-
-Run this command before pulling updates:
-
+🔹Now start you node 
 ```bash
-git stash
+python3 -m venv .venv
+source .venv/bin/activate
 ```
-● This ensures your local modifications don’t block the update.
+```bash
+./run_rl_swarm.sh
+```
 
 After this update start from 📂 Step 3 above to restart you node
 
